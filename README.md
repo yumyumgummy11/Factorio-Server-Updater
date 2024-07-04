@@ -18,8 +18,8 @@ The script will then ask for the file path of the server, it is looking for the 
 EX: /home/user/Desktop/My-Factorio-Server
 if you put "/home/user/Desktop/My-Factorio-Server/factorio" then the script assues that the server is located inside a folder called 'factorio' and it wont work.
 
-after the scrip confirms the file path it should just be sit back and watch, the scrip will automatically copy the old server settings, whitelist, player-data, and achievments
-after that it will ask if you would like to delete the old server, i would recomend against it untill you have started your server and joined to make sure that nothing is broken or anything but in order for the script to work the old server will have to be removed or renamed to something else
+after the scrip confirms the file path it should just be sit back and watch, the scrip will automatically copy the old server settings, whitelist, player-data, and achievments.
+after that it will ask if you would like to delete the old server, i would recomend against it untill you have started your server and joined to make sure that nothing is broken or anything but in order for the script to work the old server will have to be removed or renamed to something else.
 
 
 Use at your own risk
