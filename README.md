@@ -1,5 +1,5 @@
 IMPORTANT
-If you have your servers save file inside the server folder itself then this script doesnt copy it over to the new server, this script assues that the world file is stored outside of the factorio folder
+If you have your servers save file inside the server folder itself then this script doesnt copy it over to the new server, this script assumes that the world file is stored outside of the factorio folder
 EX: if your save file is located here: "/home/user/Desktop/My-Factorio-Server/factorio/saves/my-world.zip" the server will not copy it over and you must do that yourself
 if your server stores its save file outside the factorio folder like this "/home/user/Desktop/My-Factorio-Server/my-world.zip" then you should be fine
 
