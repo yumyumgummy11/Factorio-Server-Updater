@@ -64,10 +64,17 @@ def extract_new_server(server_fp):
     
     print("Copying server data to new server...")
     time.sleep(1)
-    shutil.copyfile(server_fp + '/factorio-backup-server/data/server-settings.json', server_fp + '/factorio/data/server-settings.json')
-    shutil.copyfile(server_fp + '/factorio-backup-server/data/server-whitelist.json', server_fp + '/factorio/data/server-whitelist.json')
-    shutil.copyfile(server_fp + '/factorio-backup-server/player-data.json', server_fp + '/factorio/player-data.json')
-    shutil.copyfile(server_fp + '/factorio-backup-server/achievements.dat', server_fp + '/factorio/achievements.dat')
+    try:
+        shutil.copyfile(server_fp + '/factorio-backup-server/data/server-settings.json', server_fp + '/factorio/data/server-settings.json')
+        shutil.copyfile(server_fp + '/factorio-backup-server/data/server-whitelist.json', server_fp + '/factorio/data/server-whitelist.json')
+        shutil.copyfile(server_fp + '/factorio-backup-server/player-data.json', server_fp + '/factorio/player-data.json')
+        shutil.copyfile(server_fp + '/factorio-backup-server/achievements.dat', server_fp + '/factorio/achievements.dat')
+    except Exception as error:
+        print("ERROR: Unable to copy 1 of more of the following files: \nserver-settings.json \nserver-whitelist.json \nplayer-data.json \nachievements.dat")
+        print("Are all of these files present in the server?")
+        print("Exiting Program, in order to run again i would delete the extracted factorio server and the tar file and then rename the backup back to just factorio and make sure all those files are present")
+        time.sleep(60)
+        quit()
     print("Server data successfully copied!")
     while True:
         try:
